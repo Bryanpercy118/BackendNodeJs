@@ -5,3 +5,10 @@ export const getProducts = (req: Request, res: Response)=>{
         message: 'get products'
     })
 }
+
+export const getProduct = (req: Request, res: Response)=>{
+    res.json({
+        message: 'get products',
+        id: req.params.id
+    })
+}
