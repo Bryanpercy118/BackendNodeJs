@@ -7,8 +7,9 @@ export const getProducts = (req: Request, res: Response)=>{
 }
 
 export const getProduct = (req: Request, res: Response)=>{
+    const { id } = req.params;
     res.json({
         message: 'get products',
-        id: req.params.id
+        id
     })
 }

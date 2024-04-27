@@ -8,9 +8,10 @@ const getProducts = (req, res) => {
 };
 exports.getProducts = getProducts;
 const getProduct = (req, res) => {
+    const { id } = req.params;
     res.json({
         message: 'get products',
-        id: req.params.id
+        id
     });
 };
 exports.getProduct = getProduct;
