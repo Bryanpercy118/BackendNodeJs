@@ -14,3 +14,19 @@ export const getProduct = (req: Request, res: Response)=>{
     })
 }
 
+export const deleteProduct = (req: Request, res: Response)=>{
+    const { id } = req.params;
+    res.json({
+        message: 'delete products',
+        id
+    })
+}
+
+export const postProduct = (req: Request, res: Response )=>{
+    const { body } = req;
+
+    res.json({
+        message: 'post products',
+        body
+    })
+}
