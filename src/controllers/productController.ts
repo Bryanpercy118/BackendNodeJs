@@ -13,3 +13,4 @@ export const getProduct = (req: Request, res: Response)=>{
         id
     })
 }
+
