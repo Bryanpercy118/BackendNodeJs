@@ -33,8 +33,10 @@ export const postProduct = (req: Request, res: Response )=>{
 
 export const updateProduct = (req: Request, res: Response )=>{
     const { body } = req;
+    const {id} = req.params;
     res.json({
         message: 'update products',
+        id,
         body
     })
 }
