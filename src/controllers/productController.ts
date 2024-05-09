@@ -24,10 +24,9 @@ export const deleteProduct = (req: Request, res: Response)=>{
 
 export const postProduct = (req: Request, res: Response )=>{
     const { body } = req;
-    const { id } = req.params;
+
     res.json({
         message: 'post products',
-        id,
         body
     })
 }
